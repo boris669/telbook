@@ -4,9 +4,11 @@
 *   @date   20 Jan 2018
 */
 #include <stdio.h>
+#include <locale.h>
 
 int main(int argc, char *argv[])
 {
+    setlocale(LC_ALL, "Rus");
     if (argc != 2)
     {
         printf("требуется файл");
