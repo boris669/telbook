@@ -4,8 +4,9 @@
 *   @date   20 Jan 2018
 */
 #include <stdio.h>
-
-int main(int argc, char *argv[])
+#include <stdlib.h>
+#include <string.h>
+int main (int argc, char *argv[])
 {
     if (argc != 2)
     {
@@ -19,4 +20,19 @@ int main(int argc, char *argv[])
         printf("File not open");
         return 1;
     }
+void add_strings(float *str[], size_t count_x)
+ {
+    for (size_t i = 0; i < count_x; i++)
+    {
+      str = str[count_x + i];
+        for (int j = 0; j < 1024; ++j)
+        {
+            const size_t index = count_x + i;
+            str[index] + j;
+            if (str[index] + j != 0)
+                continue;
+        }
+
+    }
+ }
 }
