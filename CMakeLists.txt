@@ -4,4 +4,7 @@ cmake_minimum_required(VERSION 3.8)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(telbook telbook.c)
+set(HEADERS parser.h)
+set(SOURCES parser.c)
+
+add_executable(telbook telbook.c ${HEADERS} ${SOURCES})
