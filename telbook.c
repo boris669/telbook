@@ -18,24 +18,11 @@ int main(int argc, char *argv[])
     }
 
     FILE *file = fopen(argv[1], "r");
-    if (file != 0) {
+    if (file == NULL) {
         printf("File not open");
         return 1;
     }
+
+    return 0;
 }
 
-void add_strings(float *str[], size_t count_x)
-{
-    for (size_t i = 0; i < count_x; i++)
-    {
-        str = str[count_x + i];
-        for (int j = 0; j < 1024; ++j)
-        {
-            const size_t index = count_x + i;
-            str[index] + j;
-            if (str[index] + j != 0)
-                continue;
-        }
-
-    }
-}

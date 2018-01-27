@@ -7,6 +7,8 @@ set(CMAKE_C_STANDARD 11)
 set(HEADERS
         parser.h
         contact.h)
-set(SOURCES parser.c)
+set(SOURCES
+        parser.c
+        contact.c)
 
 add_executable(telbook telbook.c ${HEADERS} ${SOURCES})
