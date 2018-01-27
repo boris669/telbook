@@ -5,3 +5,7 @@
 */
 
 #pragma once
+
+#include "contact.h"
+
+void parse_contact(const char *line, struct contact *);
