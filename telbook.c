@@ -23,6 +23,16 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    struct contact book[100];
+    size_t size = 0;
+    read_contacts(file, book, &size);
+
+    printf("your contact book: \n");
+    for (int i = 0; i < size; i++) {
+        print_contact(book + i);
+        printf("-----\n");
+    }
+
     return 0;
 }
 
