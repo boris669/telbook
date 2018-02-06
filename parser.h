@@ -16,3 +16,4 @@ enum parse_errors {
 int parse_contact(const char *line, struct contact *contact);
 
 int read_contacts(FILE *file, struct contact *contacts, size_t *size);
+
